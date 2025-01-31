@@ -1,6 +1,13 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+// src/App.tsx
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+import StateManager from '@/components/main';
+
+const App: React.FC = () => {
+  return (
+    <div>
+      <StateManager />  {/* Rickroll bileşenini ekliyoruz */}
+    </div>
+  );
 }
+
+export default App;
